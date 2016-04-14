@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <!--<script src="act.js"></script>-->
+    <script src="testAct.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <dl>
+        <dt><p id="splitTime">00:00,00</p></dt>
+        <dt><p id="allTime">00:00,00</p></dt>
+        <dt><div id="buttons">
+            <button id="splitReset" onclick="reset()">Split</button>
+            <button id="startStop" onclick="start()">Start</button>
+        </div></dt>
+        <dt><ol id="splits" reversed>
+        </ol>
+        </dt>
+
+    </dl>
+</body>
+</html>
