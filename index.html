@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Stopwatch</title>
-    <!--<script src="act.js"></script>-->
-    <script src="testAct.js"></script>
+    <script src="obj.js"></script>
+    <script src="act.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <dl>
-        <dt><p id="splitTime">00:00,00</p></dt>
-        <dt><p id="allTime">00:00,00</p></dt>
-        <dt><div id="buttons">
-            <button id="splitReset" onclick="reset()">Split</button>
-            <button id="startStop" onclick="start()">Start</button>
-        </div></dt>
-        <dt><ol id="splits" reversed>
-        </ol>
-        </dt>
-
-    </dl>
+<dl>
+    <dt>
+        <p id="splitTime">00:00,00</p>
+    </dt>
+    <dt>
+        <p id="allTime">00:00,00</p>
+    </dt>
+    <dt>
+        <div class="button" id="splitReset" onclick="eventSplitReset()">
+            <div class="button_text">Split</div>
+        </div>
+        <div class="button" id="startStop" onclick="eventStartStop()">
+            <div class="button_text" style="color: green">Start</div>
+        </div>
+    </dt>
+    <dt>
+        <ol id="splits" reversed></ol>
+    </dt>
+</dl>
 </body>
 </html>
